@@ -1,0 +1,765 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration-line: none!important;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+#bottom-left:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*menu icon*/
+
+#menu-icon {
+    width: 70%;
+    display: block;
+    margin-top: 25%;
+    height: 150px;
+}
+
+#menu-icon h3 {
+    color: firebrick;
+    margin-left: 10px;
+}
+
+.icon-list {
+    display: table;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 6%;
+}
+
+.icon-list img {
+    width: 40px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-list ul {
+    width: 100%;
+}
+
+.icon-list ul li {
+    width: 120px;
+    display: block;
+    display: table-cell;
+}
+
+.icon-list ul li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#footer {
+    width: 68%;
+    display: block;
+    margin-top: 3%;
+    margin-left: 10px;
+}
+
+#footer h3 {
+    color: firebrick;
+}
+
+#footer> div span {
+    margin-top: 3%;
+}
+
+
+/*end*/
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/****************************hearder*******************************************/
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#header {
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    display: block;
+    margin-top: 10px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #ccc;
+    box-shadow: 1000;
+}
+
+#header #left-header {
+    margin-left: 20px;
+    margin-top: auto;
+    margin-top: auto;
+    display: inline-block;
+    width: 200px;
+    float: left;
+}
+
+#header #right-header {
+    margin-right: 50px;
+    margin-top: auto;
+    margin-top: auto;
+    display: inline-block;
+    width: 200px;
+    float: right;
+}
+
+#header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/****************************hearder - end*******************************************/
+
+
+/*left-body*/
+
+#leftbody {
+    width: 70%;
+    float: left;
+    height: auto;
+}
+
+
+/*active slide*/
+
+.container {
+    width: 100%;
+    display: block!important;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-bottom: 1px solid #ddd;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slider .slide .item img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    width: 95%;
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+.next-arrow {
+    display: inline-block;
+    float: right;
+}
+
+.prev-arrow {
+    display: inline-block;
+    float: left;
+}
+
+.item {
+    display: none;
+}
+
+.get-app {
+    list-style: none;
+}
+
+.item-active {
+    display: block;
+}
+
+.active-app {
+    display: block;
+}
+
+.get-app li {
+    float: left;
+}
+
+.get-ap img {
+    height: 40px;
+}
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&search&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+#bottom-left {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+    position: relative;
+    top: 100%;
+    left: 15px;
+}
+
+#map {
+    width: 40%;
+    background-color: #fff;
+    display: inline-block;
+    border: 0;
+}
+
+#map iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#body-waper {
+    width: 28.5%;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+}
+
+#search-from {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+}
+
+.btn,
+.input-group-btn .btn {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px!important;
+}
+
+#detail-search {
+    width: 30%;
+    display: table;
+    position: absolute;
+    top: 17.5%;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+#detail-search li {
+    text-align: left;
+}
+
+.detail {
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+}
+
+.detail ul li a {
+    text-decoration-line: none!important;
+}
+
+.detail span {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.detail-content {
+    display: table;
+    width: 20%;
+    line-height: 46px;
+    font-size: 0.75em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+.detail-content>.travel,
+.location,
+.restauran,
+.market {
+    display: inline-block;
+}
+
+.location {
+    text-align: right;
+    position: absolute;
+    left: 92%;
+}
+
+#travel {
+    width: 51%;
+    position: absolute;
+    left: 15%;
+    top: 16%;
+    /*    display: none;*/
+}
+
+#restaurant {
+    width: 33%;
+    position: absolute;
+    left: 32%;
+    top: 16%;
+    display: none;
+}
+
+#market {
+    width: 14%;
+    position: absolute;
+    left: 50%;
+    top: 16%;
+    display: none;
+}
+
+
+/*end-left-body*/
+
+
+/*right body*/
+
+#rightbody {
+    position: fixed;
+    top: 14.5%;
+    right: 0;
+    width: 31%;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    height: 85%;
+    overflow-y: auto;
+}
+
+.time-other {
+    display: table;
+    width: 99%;
+    height: 50px;
+    background-color: chartreuse;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-other div {
+    display: table-cell;
+    width: 25%;
+}
+
+.time-other div a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.time-other div div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 0;
+    width: 70%;
+    margin-top: 10px;
+}
+
+#price {
+    display: table;
+    width: 99%;
+    height: 25px;
+    background-color: chartreuse;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#price div {
+    display: table-cell;
+}
+
+#price div p {
+    margin-top: 10px;
+}
+
+#add-room {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.delail-add {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.book-item {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.item div {
+    display: inline-block;
+}
+
+.item {
+    display: inline-block;
+    width: 33%;
+    float: left;
+    font-size: 0.75em;
+    background-color: #fff;
+}
+
+.line-price {
+    height: 3px;
+    width: 30%;
+    background-color: #ccc;
+    float: right;
+    display: block;
+}
+
+.total-price {
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+
+#total-price {
+    float: right;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    color: firebrick;
+}
+
+#sale-off {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#sale-off h3 {
+    color: firebrick;
+}
+
+#book-now {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#book-now .btn-danger {
+    border-bottom-right-radius: 20px!important;
+}
+
+
+/*end*/
+
+
+/*end*/
+
+
+/* ==========================================================================
+   Helper classes
+  
+========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
